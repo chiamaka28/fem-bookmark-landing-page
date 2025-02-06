@@ -40,7 +40,7 @@ const Main = () => {
         </p>
       </div>
       <div className='w-[90%] mx-auto'>
-        <div className=' text-grayish-blue border-t-2 border-b-2 border-light-blue max-w-[311px]'>
+        <div className=' text-grayish-blue flex flex-col  items-stretch justify-center border-t-2 border-b-2 border-light-blue '>
           <button onClick={handleButton1Click} className=''>
             Simple Bookmarking
           </button>
@@ -73,7 +73,7 @@ const Main = () => {
               className='w-[311px]'
             />
           </div>
-          <div className='mt-20'>
+          <div className='mt-20 w-[90%] mx-auto'>
             <h3 className='text-[24px] text-center text-dark-blue font-medium'>
               Bookmark in one click
             </h3>
@@ -104,7 +104,7 @@ const Main = () => {
               className='w-[311px]'
             />
           </div>
-          <div className='mt-20'>
+          <div className='mt-20 w-[90%] mx-auto'>
             <h3 className='text-[24px] text-center text-dark-blue font-medium'>
               Intelligent search
             </h3>
@@ -134,7 +134,7 @@ const Main = () => {
               className='w-[311px]'
             />
           </div>
-          <div className='mt-20'>
+          <div className='mt-20 w-[90%] mx-auto '>
             <h3 className='text-[24px] text-center text-dark-blue font-medium'>
               Share your bookmarks
             </h3>

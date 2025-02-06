@@ -33,7 +33,11 @@ const Footer = () => {
         </ul>
         <div className='flex items-center gap-5'>
           <a href=''>
-            <img src='/icon-facebook.svg' alt='' />
+            <img
+              src='/icon-facebook.svg'
+              alt=''
+              className='w-[24px] h-[24px]'
+            />
           </a>
           <a href=''>
             <img src='/icon-twitter.svg' alt='' />

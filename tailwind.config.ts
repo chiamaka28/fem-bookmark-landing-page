@@ -38,8 +38,13 @@ export default {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
       },
+      backdropBlur: {
+        '16': '16.309690475463867px',
+      },
+      overflow: {
+        'hidden': 'hidden',
+      }
      
     },
   },
-  plugins: [],
 } satisfies Config;
