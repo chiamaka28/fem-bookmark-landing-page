@@ -40,34 +40,50 @@ const Main = () => {
         </p>
       </div>
       <div className='w-[90%] mx-auto'>
-        <div className=' text-grayish-blue flex flex-col  md:flex-row md:w-[730px] md:mx-auto  items-stretch justify-center md:justify-between border-t-2 border-b-2 border-light-blue md:border-t-0  md:mt-5 '>
-          <div className=' flex justify-center items-center'>
+        <div className=' text-grayish-blue flex flex-col  md:flex-row md:w-[730px] md:mx-auto  items-stretch justify-center md:justify-between border-t-2 border-b-2 border-light-blue md:border-t-0  md:mt-5 md:px-10'>
+          <div className=' flex justify-center items-stretch md:items-center'>
             <button
               onClick={handleButton1Click}
-              className=' py-4 md:pt-3 md:pb-6 hover:text-soft-red md:h-full relative'
+              className=' py-4 md:pt-3 md:pb-6 font-medium text-dark-blue hover:text-soft-red md:h-full relative'
             >
               Simple Bookmarking
-              <div
-                className='after:absolute after:content-[""] after:bottom-0 after:left-0
-               md:after:left-0 after:w-full after:h-[2px] after:bg-soft-red'
-              ></div>
+              {activeButton === 1 && (
+                <div
+                  className='after:absolute after:content-[""] after:bottom-0 after:left-0
+               md:after:left-0 after:w-full  after:h-[2px] after:bg-soft-red'
+                ></div>
+              )}
             </button>
           </div>
-          <div className=' flex justify-center items-center'>
+          <div className='border-t-2  border-light-blue md:border-none flex justify-center items-stretch md:items-center'>
             <button
               onClick={handleButton2Click}
-              className='border-t-2  border-w-full border-light-blue md:border-none py-4 md:pt-3 md:pb-6 hover:text-soft-red  md:h-full relative'
+              className=' py-4 md:pt-3 md:pb-6 font-medium text-dark-blue hover:text-soft-red  md:h-full relative'
             >
               Speedy Searching
-              <div className='md:after:absolute md:after:content-[""] md:after:bottom-0 md:after:left-0 md:after:w-full md:after:h-[2px] md:after:bg-soft-red'></div>
+              {activeButton === 2 && (
+                <div
+                  className='after:absolute after:content-[""] after:bottom-0 after:left-0
+               md:after:left-0 after:w-full  after:h-[2px] after:bg-soft-red'
+                ></div>
+              )}
             </button>
           </div>
-          <button
-            onClick={handleButton3Click}
-            className='border-t-2  border-light-blue md:border-none pt-2 pb-6 hover:text-soft-red'
-          >
-            Easy Sharing
-          </button>
+          <div className='border-t-2  border-light-blue md:border-none flex justify-center items-stretch md:items-center'>
+            <button
+              onClick={handleButton3Click}
+              className=' pt-2 pb-6 font-medium text-dark-blue
+               hover:text-soft-red md:h-full relative'
+            >
+              Easy Sharing
+              {activeButton === 3 && (
+                <div
+                  className='after:absolute after:content-[""] after:bottom-0 after:left-0
+               md:after:left-0 after:w-full after:h-[2px] after:bg-soft-red'
+                ></div>
+              )}
+            </button>
+          </div>
         </div>
       </div>
 

@@ -1,4 +1,5 @@
 'use client';
+import { Divide } from 'lucide-react';
 import React, { useState } from 'react';
 
 const Cta = () => {
@@ -34,18 +35,30 @@ const Cta = () => {
         </h3>
         <form
           onSubmit={handleSubmit}
-          className='flex flex-col md:flex-row md:justify-center items-center font-medium   gap-4'
+          className='flex flex-col items-center md:flex-row md:justify-center md:items-start font-medium  gap-4'
         >
-          <input
-            type='text'
-            placeholder='Enter your email address'
-            id='email'
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            className={`w-full h-12 max-w-[311px] rounded-[5px] px-6 text-sm outline-none border border-white text-dark-blue ${
-              error ? 'border-soft-red' : ''
-            } `}
-          />
+          <div
+            className={`w-full max-w-[311px] md:flex md:flex-col md:justify-center md:items-center  ${
+              error ? 'bg-soft-red rounded-[5px]' : ''
+            }`}
+          >
+            <div className='relative w-full'>
+              <input
+                type='text'
+                placeholder='Enter your email address'
+                id='email'
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                className={`w-full h-12  rounded-[5px] px-6 text-sm outline-none
+                  ${error ? 'border-[3px] border-soft-red text-soft-red' : ''}`}
+              />
+            </div>
+            {error && (
+              <span className='text-white text-[10px] text-left self-start bg-soft-red  py-1 px-2  italic'>
+                {error}
+              </span>
+            )}
+          </div>
           <button className='w-full h-12 max-w-[311px] md:w-[130px] text-sm rounded-[5px] bg-soft-red border border-soft-red hover:text-soft-red hover:bg-white hover:border-soft-red transition-all duration-300'>
             Contact Us
           </button>

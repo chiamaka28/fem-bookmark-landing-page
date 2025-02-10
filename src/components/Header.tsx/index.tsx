@@ -2,7 +2,7 @@ import React from 'react';
 
 const Header = () => {
   return (
-    <header className='w-[90%] md:flex md:justify-between md:flex-row-reverse md:max-w-[1100px] md:mx-auto'>
+    <header className='w-[90%] md:flex md:justify-between md:flex-row-reverse md:max-w-[1100px] mx-auto'>
       <div className='relative flex justify-center items-center mt-10 md:mt-0 '>
         <div className="after:absolute after:top-1/4  after:w-[80%] after:-right-[20%] md:after:w-[600px]  lg:after:w-[900px] md:after:-right-full after:h-[11.5rem] md:after:h-[260px] lg:after:h-[352px] after:content-[''] after:bg-soft-blue after:bg-[length:200%] after:rounded-l-[316px] after:z-[-1000]"></div>
         <img
