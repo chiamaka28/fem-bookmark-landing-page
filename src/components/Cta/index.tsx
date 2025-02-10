@@ -14,12 +14,14 @@ const Cta = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (validateEmail(email)) {
-      // setError('');
+      setError('');
       setEmail('');
       console.log(email);
       console.log('Email submitted:', email);
+    } else if (email === '') {
+      setError('Whoops, kindly input an email');
     } else {
-      setError('Please enter a valid email address.');
+      setError('Whoops, make sure it’s an email');
       console.log(error);
     }
   };
@@ -50,7 +52,11 @@ const Cta = () => {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 className={`w-full h-12  rounded-[5px] px-6 text-sm outline-none
-                  ${error ? 'border-[3px] border-soft-red text-soft-red' : ''}`}
+                  ${
+                    error
+                      ? 'border-[3px] border-soft-red text-soft-red'
+                      : 'text-dark-blue'
+                  }`}
               />
             </div>
             {error && (

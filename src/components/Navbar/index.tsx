@@ -13,7 +13,7 @@ const Navbar = () => {
   }, [isOpen]);
 
   return (
-    <div className='flex justify-between items-center md:w-full py-6  px-5 lg:px-0  md:max-w-[1100px] md:mx-auto'>
+    <div className='flex justify-between items-center md:w-full py-6 md:py-7  px-5 lg:px-0  md:max-w-[1100px] md:mx-auto'>
       <a href=''>
         <img src='/logo-bookmark.svg' alt='' />
       </a>
