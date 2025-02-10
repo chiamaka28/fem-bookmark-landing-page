@@ -8,11 +8,11 @@ import {
 
 const Faq = () => {
   return (
-    <div className='w-[90%] mx-auto mt-28'>
-      <h3 className='text-[24px] text-dark-blue text-center font-medium'>
+    <div className='w-[90%] mx-auto md:max-w-[540px] mt-28'>
+      <h3 className='text-[24px] md:text-[32px] text-dark-blue text-center font-medium'>
         Frequently Asked Questions
       </h3>
-      <p className='text-grayish-blue text-center text-[15px]'>
+      <p className='text-grayish-blue text-center text-[15px] md:text-[18px] py-4 md:py-6'>
         Here are some of our FAQs. If you have any other questions you'd like
         answered please feel free to email us.
       </p>
@@ -68,8 +68,8 @@ const Faq = () => {
           </AccordionItem>
         </Accordion>
       </div>
-      <div className='flex justify-center items-center my-6'>
-        <button className='bg-soft-blue text-white  text-[14px] shadow-customButton font-medium py-3 px-5 rounded-md'>
+      <div className='flex justify-center items-center mt-6 mb-28'>
+        <button className='bg-soft-blue border border-white text-white  text-[14px] shadow-customButton font-medium py-3 px-5 rounded-md hover:text-soft-blue hover:bg-white hover:border-soft-blue transition-all duration-300'>
           More Info
         </button>
       </div>
