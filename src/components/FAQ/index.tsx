@@ -13,8 +13,8 @@ const Faq = () => {
         Frequently Asked Questions
       </h3>
       <p className='text-grayish-blue text-center text-[15px] md:text-[18px] py-4 md:py-6'>
-        Here are some of our FAQs. If you have any other questions you'd like
-        answered please feel free to email us.
+        Here are some of our FAQs. If you have any other questions you&apos;d
+        like answered please feel free to email us.
       </p>
       <div>
         <Accordion type='single' collapsible>
