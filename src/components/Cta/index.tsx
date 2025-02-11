@@ -26,14 +26,14 @@ const Cta = () => {
   };
 
   return (
-    <div className='bg-soft-blue text-white text-center'>
-      <div className='w-[90%] mx-auto py-16'>
-        <h6 className='text-xs font-medium tracking-[4.615px] leading-[40px]'>
+    <div className='bg-soft-blue text-white text-center flex justify-center items-center h-[360px]'>
+      <div className='w-[90%] md:max-w-[442px] mx-auto'>
+        <h3 className='text-xs md:text-[13px] font-medium tracking-[4.615px] leading-[40px]'>
           35,000+ ALREADY JOINED
-        </h6>
-        <h3 className='text-2xl font-medium mb-5'>
-          Stay up-to-date with what we&apos;re doing
         </h3>
+        <h4 className='text-2xl lg:text-[32px] font-medium mb-5'>
+          Stay up-to-date with what we&apos;re doing
+        </h4>
         <form
           onSubmit={handleSubmit}
           className='flex flex-col items-center md:flex-row md:justify-center md:items-start font-medium  gap-4'
@@ -59,7 +59,7 @@ const Cta = () => {
               />
             </div>
             {error && (
-              <span className='text-white text-[10px] text-left self-start bg-soft-red  py-1 px-2  italic'>
+              <span className='text-white text-[10px] text-left self-start bg-soft-red md:h-5 py-1 px-2  italic'>
                 {error}
               </span>
             )}

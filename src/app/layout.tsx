@@ -8,6 +8,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en' className={`${rubik.variable}`}>
+      <head>
+        <title>Bookmark Landing Page</title>
+      </head>
       <body>{children}</body>
     </html>
   );

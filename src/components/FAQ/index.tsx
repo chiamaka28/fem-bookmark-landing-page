@@ -8,15 +8,15 @@ import {
 
 const Faq = () => {
   return (
-    <div className='w-[90%] mx-auto md:max-w-[540px] mt-28'>
+    <div className='w-[90%] mx-auto md:max-w-[540px] mt-28 lg:mt-36'>
       <h3 className='text-[24px] md:text-[32px] text-dark-blue text-center font-medium'>
         Frequently Asked Questions
       </h3>
-      <p className='text-grayish-blue text-center text-[15px] md:text-[18px] py-4 md:py-6'>
+      <p className='text-grayish-blue text-center text-[15px] md:text-[17px] py-4 md:py-6'>
         Here are some of our FAQs. If you have any other questions you&apos;d
         like answered please feel free to email us.
       </p>
-      <div>
+      <div className='md:border-t md:border-dark-blue md:border-opacity-[0.1477] lg:mt-8'>
         <Accordion type='single' collapsible>
           <AccordionItem value='item-1'>
             <AccordionTrigger>What is Bookmark?</AccordionTrigger>
@@ -68,7 +68,7 @@ const Faq = () => {
           </AccordionItem>
         </Accordion>
       </div>
-      <div className='flex justify-center items-center mt-6 mb-28'>
+      <div className='flex justify-center items-center mt-6 md:mt-12 mb-28'>
         <button className='bg-soft-blue border border-white text-white  text-[14px] shadow-customButton font-medium py-3 px-5 rounded-md hover:text-soft-blue hover:bg-white hover:border-soft-blue transition-all duration-300'>
           More Info
         </button>

@@ -3,7 +3,7 @@ import React from 'react';
 const Footer = () => {
   return (
     <div className='bg-dark-blue'>
-      <div className='w-[90%] md:max-w-[1100px]  mx-auto flex flex-col md:flex-row md:justify-between justify-center items-center gap-6 py-10'>
+      <div className='w-[90%] md:max-w-[1100px]  mx-auto flex flex-col md:flex-row md:justify-between justify-center items-center gap-6 py-10 md:py-8'>
         <div className='flex flex-col md:flex-row md:items-center justify-center gap-8'>
           <a href='#'>
             <svg width='148' height='25' xmlns='http://www.w3.org/2000/svg'>

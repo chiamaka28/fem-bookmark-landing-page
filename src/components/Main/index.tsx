@@ -29,7 +29,7 @@ const Main = () => {
 
   return (
     <main>
-      <div className='w-[90%] md:w-[540px] md:mt-16 mx-auto'>
+      <div className='w-[90%] md:w-[540px] md:mt-16 lg:mt-24 mx-auto'>
         <h2 className='text-center text-dark-blue text-[24px] md:text-[32px] font-medium '>
           Features
         </h2>
@@ -40,11 +40,13 @@ const Main = () => {
         </p>
       </div>
       <div className='w-[90%] mx-auto'>
-        <div className=' text-grayish-blue flex flex-col  md:flex-row md:w-[730px] md:mx-auto  items-stretch justify-center md:justify-between border-t-2 border-b-2 border-light-blue md:border-t-0  md:mt-5 md:px-10'>
+        <div className=' text-grayish-blue flex flex-col  md:flex-row md:w-[730px] md:mx-auto  items-stretch justify-center md:justify-between border-t-2 border-b-2 border-light-blue md:border-t-0  md:mt-5 lg:mt-8 md:px-10'>
           <div className=' flex justify-center items-stretch md:items-center'>
-            <button
+            <div
               onClick={handleButton1Click}
-              className=' py-4 md:pt-3 md:pb-6 font-medium text-dark-blue hover:text-soft-red md:h-full relative'
+              className={` py-4 md:pt-3 md:pb-6 font-medium ${
+                activeButton === 1 ? 'text-dark-blue' : 'text-opacity-[0.75]'
+              }   hover:text-soft-red md:h-full relative`}
             >
               Simple Bookmarking
               {activeButton === 1 && (
@@ -53,12 +55,16 @@ const Main = () => {
                md:after:left-0 after:w-full  after:h-[2px] after:bg-soft-red'
                 ></div>
               )}
-            </button>
+            </div>
           </div>
           <div className='border-t-2  border-light-blue md:border-none flex justify-center items-stretch md:items-center'>
-            <button
+            <div
               onClick={handleButton2Click}
-              className=' py-4 md:pt-3 md:pb-6 font-medium text-dark-blue hover:text-soft-red  md:h-full relative'
+              className={`
+
+              } py-4 md:pt-3 md:pb-6 font-medium ${
+                activeButton === 2 ? 'text-dark-blue' : 'text-opacity-[0.75]'
+              }  md:h-full relative`}
             >
               Speedy Searching
               {activeButton === 2 && (
@@ -67,13 +73,15 @@ const Main = () => {
                md:after:left-0 after:w-full  after:h-[2px] after:bg-soft-red'
                 ></div>
               )}
-            </button>
+            </div>
           </div>
           <div className='border-t-2  border-light-blue md:border-none flex justify-center items-stretch md:items-center'>
-            <button
+            <div
               onClick={handleButton3Click}
-              className=' pt-2 pb-6 font-medium text-dark-blue
-               hover:text-soft-red md:h-full relative'
+              className={` pt-2 pb-6 font-medium ${
+                activeButton === 3 ? 'text-dark-blue' : 'text-opacity-[0.75]'
+              } 
+               hover:text-soft-red md:h-full relative`}
             >
               Easy Sharing
               {activeButton === 3 && (
@@ -82,7 +90,7 @@ const Main = () => {
                md:after:left-0 after:w-full after:h-[2px] after:bg-soft-red'
                 ></div>
               )}
-            </button>
+            </div>
           </div>
         </div>
       </div>
@@ -91,14 +99,14 @@ const Main = () => {
         <div
           className={` ${
             activeButton === 1 ? 'opacity-100' : 'opacity-0'
-          } transition-opacity duration-300 ease-in-out relative md:flex md:justify-between md:gap-16  w-[90%] md:max-w-[1100px] mx-auto mt-14 mb-36`}
+          } transition-opacity duration-300 ease-in-out relative md:flex md:justify-between md:gap-16 lg:gap-20  w-[90%] md:max-w-[1100px] mx-auto mt-14 lg:mt-20 mb-36`}
         >
           <div className='relative flex justify-center items-center mt-10 md:mt-0 md:w-1/2'>
             <div className="after:absolute after:top-1/4  after:w-[80%] after:-left-[20%] md:after:w-[600px]  lg:after:w-[900px] md:after:-left-full after:h-[11.5rem] md:after:h-[260px] lg:after:h-[352px] after:content-[''] after:bg-soft-blue after:bg-[length:200%] after:rounded-r-[316px] after:z-[-1000]"></div>
             <img
               src='/illustration-features-tab-1.svg'
               alt=''
-              className='w-[340px] lg:w-[536px] '
+              className='w-[340px] lg:w-full '
             />
           </div>
           <div className='mt-20 w-[90%] md:w-1/2 mx-auto  md:max-w-[540px]'>
@@ -122,14 +130,14 @@ const Main = () => {
         <div
           className={`transition-opacity duration-300 ease-in-out relative mb-5 ${
             activeButton === 2 ? 'opacity-100' : 'opacity-0'
-          } transition-opacity duration-300 ease-in-out relative md:flex md:justify-between md:gap-16  w-[90%] md:max-w-[1100px] mx-auto mt-14 mb-3`}
+          } transition-opacity duration-300 ease-in-out relative md:flex md:justify-between md:gap-16 lg:gap-20  w-[90%] md:max-w-[1100px] mx-auto mt-14  lg:mt-20 mb-3`}
         >
           <div className='relative flex justify-center items-center mt-10 md:mt-0 md:w-1/2'>
             <div className="after:absolute after:top-1/4  after:w-[80%] after:-left-[20%] md:after:w-[600px]  lg:after:w-[900px] md:after:-left-full after:h-[11.5rem] md:after:h-[260px] lg:after:h-[352px] after:content-[''] after:bg-soft-blue after:bg-[length:200%] after:rounded-r-[316px] after:z-[-1000]"></div>
             <img
               src='/illustration-features-tab-2.svg'
               alt=''
-              className='w-[340px] lg:w-[536px] '
+              className='w-[340px] lg:w-full '
             />
           </div>
           <div className='mt-20 w-[90%] mx-auto  md:w-1/2   md:max-w-[540px]'>
@@ -150,7 +158,7 @@ const Main = () => {
       )}
       {activeButton === 3 && (
         <div
-          className={`transition-opacity duration-300 ease-in-out relative md:flex md:justify-between md:gap-16  w-[90%] md:max-w-[1100px] mx-auto mt-14 mb-3 ${
+          className={`transition-opacity duration-300 ease-in-out relative md:flex md:justify-between md:gap-16 lg:gap-20  w-[90%] md:max-w-[1100px] mx-auto mt-14 lg:mt-20 mb-3 ${
             activeButton === 3 ? 'opacity-100' : 'opacity-0'
           }`}
         >
@@ -159,7 +167,7 @@ const Main = () => {
             <img
               src='/illustration-features-tab-3.svg'
               alt=''
-              className='w-[340px] lg:w-[536px] '
+              className='w-[340px] lg:w-full '
             />
           </div>
           <div className='mt-20 w-[90%] mx-auto  md:w-1/2   md:max-w-[540px]'>
@@ -178,7 +186,7 @@ const Main = () => {
           </div>
         </div>
       )}
-      <section className='mt-24 w-[90%] mx-auto'>
+      <section className='mt-24 lg:mt-48 w-[90%] mx-auto'>
         <div className='md:max-w-[540px] md:mx-auto'>
           <h4 className='text-[24px] md:text-[32px] text-center text-dark-blue font-medium'>
             Download the extension

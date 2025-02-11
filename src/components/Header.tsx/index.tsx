@@ -8,13 +8,13 @@ const Header = () => {
         <img
           src='/illustration-hero.svg'
           alt=''
-          className='w-[340px] lg:w-[575px] lg:ml-30'
+          className='w-[340px] lg:w-full lg:ml-30'
         />
       </div>
 
-      <div className='w-[90%] md:w-1/2 mx-auto mt-7 md:mt-16 mb-28 '>
+      <div className='w-[90%] md:w-1/2 mx-auto mt-7 lg:mt-28 mb-28 '>
         <div className=''>
-          <h1 className='text-[30px] lg:text-[48px] lg:leading-[52px] font-medium text-dark-blue text-center md:text-left '>
+          <h1 className='text-[30px] lg:text-[48px] lg:leading-[52px]  font-medium text-dark-blue text-center md:text-left '>
             A Simple Bookmark Manager
           </h1>
           <p className='text-[15px] lg:text-[18px] lg:leading-7  text-grayish-blue text-center py-5 md:text-left'>
